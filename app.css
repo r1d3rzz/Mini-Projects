@@ -23,7 +23,7 @@ body {
 }
 
 .wrapper.active {
-  height: 440px;
+  height: 420px;
 }
 
 .wrapper h2 {
@@ -66,18 +66,17 @@ body {
   background-color: #308ac7;
 }
 
-.wrapper > .qr_logo {
-  width: 70%;
-  display: block;
-  margin: 0 auto;
-  border: 1px solid rgba(128, 128, 128, 0.854);
-  margin-top: 15px;
-  margin-bottom: 10px;
-  border-radius: 5px;
+.wrapper > .img_wrapper {
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 20px;
   opacity: 0;
 }
 
-.wrapper.active .qr_logo {
+.wrapper.active .img_wrapper {
   opacity: 1;
   pointer-events: auto;
   transition: opacity 0.3s 0.3s ease;
